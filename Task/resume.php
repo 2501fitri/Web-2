@@ -35,43 +35,24 @@
                 </div>
             </nav>
             <!-- Page Content-->
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+            <?php include_once "partials/sections/resume-section.php"; ?>
                         <!-- Experience Section-->
-                        <section>
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                                <!-- Download resume button-->
-                                <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" href="#!">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
-                                </a>
-                            </div>
+                        <?php include_once "partials/sections/experience-section.php"; ?>
                             <!-- Experience Card 1-->
                             <?php include_once "partials/cards/experience-card-1.php"; ?>
                             <!-- Experience Card 2-->
                             <?php include_once "partials/cards/experience-card-2.php"; ?>
-                        </section>
                         <!-- Education Section-->
-                        <section>
-                            <h2 class="text-secondary fw-bolder mb-4">Education</h2>
+                        <?php include_once "partials/sections/education.php"; ?>
                             <!-- Education Card 1-->
                             <?php include_once "partials/cards/education-card-1.php"; ?>
                             <!-- Education Card 2-->
                             <?php include_once "partials/cards/education-card-2.php"; ?>
-                        </section>
-                        <!-- Divider-->
+                    <!-- Divider-->
                         <div class="pb-5"></div>
                         <!-- Skills Section-->
                         <?php include_once "partials/sections/skills-section.php"; ?>
-                    </div>
-                </div>
-            </div>
+                        </div>
         </main>
         <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
